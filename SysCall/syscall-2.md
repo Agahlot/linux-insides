@@ -248,7 +248,7 @@ sub	$(6*8), %rsp
 When a system call occurs from the user's application, general purpose registers have the following state:
 
 * `rax` - contains system call number; 
-* `rcx` - contains return address to the user space;
+* `rcx` - contains the next instruction pointer;
 * `r11` - contains register flags;
 * `rdi` - contains first argument of a system call handler;
 * `rsi` - contains second argument of a system call handler;
